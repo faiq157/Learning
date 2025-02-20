@@ -11,7 +11,7 @@ function test(){
   return(
     <>
     <h1>Printing Name</h1>
-    <input className='bg-white' type="text"
+    <input className='p-2 m-2 border border-white rounded-2xl' type="text"
     placeholder='plaese enter your name'
     value={name}
     onChange={(e)=>setName(e.target.value)} />
@@ -33,3 +33,26 @@ function test(){
   )
 }
 export default test
+
+
+// function MyForm() {
+//   const [name, setName] = useState("");
+
+//   const handleSubmit = (event) => {
+//     event.preventDefault();
+//     alert(`The name you entered was: ${name}`)
+//   }
+
+//   return (
+//     <form onSubmit={handleSubmit}>
+//       <label>Enter your name:
+//         <input 
+//           type="text" 
+//           value={name}
+//           onChange={(e) => setName(e.target.value)}
+//         />
+//       </label>
+//       <input type="submit" />
+//     </form>
+//   )
+// }
