@@ -21,7 +21,7 @@ function test(){
 
   const showContent =(term)=>{
 term.preventDefault();
-console.log(`Your name is: ${enterName}, your email is: ${enterEmail},your password is: ${enterPassword}`)
+console.log(`Your name is: ${enterName} <br>, your email is: ${enterEmail},your password is: ${enterPassword}`)
   }
 
   return(
@@ -56,25 +56,27 @@ console.log(`Your name is: ${enterName}, your email is: ${enterEmail},your passw
       </label>
       <input type="submit" />
     </form>
-    
-    //my code
+    {/* my code */}
 
 <form onSubmit={showContent}>
   <label htmlFor="">Enter Name:
-    <input type="text" value={enterName}
+    <input class="outline-1 outline-whit m-2" type="text" value={enterName}
     onChange={(e)=>showName(e.target.value)} />
   </label>
+  <br />
   <label htmlFor="">Enter Email:
-    <input type="email" 
+    <input class="outline-1 outline-white" type="email" 
     value={enterEmail}
     onChange={(e)=>showEmail(e.target.value)} />
   </label>
+  <br />
   <label htmlFor="">Enter Password:
-    <input type="password"
+    <input class="outline-1 outline-white m-3" type="password"
     value={enterPassword}
     onChange={(e)=>showPassword(e.target.value)} />
   </label>
-  <input type="submit" />
+  <br />
+  <input class="bg-sky-500 hover:bg-sky-700" type="submit" />
 </form>
 
 
