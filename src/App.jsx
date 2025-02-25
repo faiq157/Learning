@@ -1,3 +1,4 @@
+
 import Card from './components/Card'  
 
 function App(){
@@ -9,5 +10,3 @@ function App(){
   )
 }
 export default App
-
-// Head,Des,Img
